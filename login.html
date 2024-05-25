@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Вход</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header class="enter">
+	<div class="container">
+		<div>
+			<a href="index.html"><img class="test-0-logo" src="media/logo.png"></a>
+		</div>
+		<div class="menu">
+			<a href="index.html #acii"><button class="button test-0-nav-1">Предложения</button></a>
+			<a href="index.html #poisk"><button class="button test-0-nav-2">Поиск</button></a>
+			<a href="login.html"><button class="button test-0-nav-4">Личный кабинет</button></a>
+		</div>
+	</div>
+</header>
+<div class="enter-container">
+	<h1>ВХОД</h1>
+	<form name="square" id="form">
+	<label>
+		<div class="enter-elem phone">Телефон
+			<br><input name="login" class="test-1-fpn" type="tel" id="email" required=required/></div>
+		<div class="enter-elem password">Пароль
+			<br><input name="password" class="test-1-fps" type="password" id="password" required=required/></div>
+	</label>
+		<div class="test-1-fbs">
+			<a href="profile.html"><button type="submit" class ="registr">Войти</button></a>
+		</div>
+	</form>
+	<div class="registration">
+		<a href="register.html"><button class ="registration">Регистрация</button></a>
+	</div>
+</div>
+<footer class="enter-footer">
+	<div class="footer-container">
+		<div class="footer-block">
+			<a href="index.html">
+				<img src="media/logo.png" alt="logo" class="test-0-logo">
+			</a>
+			<nav class="footer-nav">
+				<a href="#" class="footer-link">FAQ</a>
+				<a href="#" class="footer-link">Пользователи</a>
+				<a href="#" class="footer-link">Отзывы</a>
+				<a href="#" class="footer-link">Контакты</a>
+				<a href="#" class="footer-link">Создал сайт:Маров Олег</a>
+			</nav>
+			<div class="test-0-phone ">
+				8 (800) 100-10-10
+			</div>
+		</div>
+	</div>
+</footer>
+<script type="text/javascript">
+	const form = document.querySelector("form");
+	const inputs = form.elements;
+	const registeredUsers = [
+  	["89991234567", "password12*"]];
+	function isValid(username, password) {   
+  		for(var i = 0; i < registeredUsers.length; i++) {
+      		var temp = registeredUsers[i];
+      		if (temp[0] == username) {
+        		var currentPair = temp;
+        	break;        
+      		}        
+  		}     
+  		if (currentPair && currentPair[1] == password) {
+    	return true;           
+  		} 
+  		else {
+    	return false;
+  		}
+	}
+	form.addEventListener('submit', function(e){
+ 	e.preventDefault();
+  	var username = inputs["login"].value;
+  	var password = inputs["password"].value;  
+    	if (!isValid(username, password)){        
+      	alert('Неверный логин или пароль');
+    	} else {      
+      	window.location.href = 'profile.html';
+    	}
+			
+});
+</script>
+</body>
+</html>

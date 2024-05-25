@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FlightPool</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="media/jquery.bxslider.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="media/jquery.bxslider.js" type="text/javascript"></script>
+</head>
+<body>
+<header>
+	<div class="container">
+		<div>
+			<img class="test-0-logo" src="media/logo.png">
+		</div>
+		<div class="menu">
+			<a href="#acii"><button class="button test-0-nav-1">Акции</button></a>
+			<a href="#poisk"><button class="button test-0-nav-2">Поиск</button></a>
+			<a href="login.html"><button class="button test-0-nav-4">Личный кабинет</button></a>
+		</div>
+	</div>
+</header>
+<div class="main-container">
+	<h2>Основные принципы накопления бронирований</h2>
+	<div class="info">
+		<div class="section">
+			<b>Выбрать подходящую дату перелета</b>
+		</div>
+		<div class="section">
+			<b>Накопить больше 50% бронирований на рейс</b>
+		</div>
+		<div class="section">
+			<b>Скидка на снижение цены</b>
+		</div>
+	</div>
+	<hr class="separate">
+	<h1>«Мы сближаем города, вы – живете там, где хотите»</h1>
+	<hr class="separate">
+	<h2>Авиапарк и экипаж</h2>
+	<div class="slider">
+		<ul class="bxslider">
+			<li>
+				<img class="slider-image" src="media/images/aircrafts/aircraft.jpg">
+			</li>
+			<li>
+				<img class="slider-image" src="media/images/salon.jpg">
+			</li>
+			<li>
+				<img class="slider-image" src="media/images/aircrafts/airbus.jpg">
+			</li>
+			<li>
+				<img class="slider-image" src="media/images/1-2.jpg">
+			</li>
+			<li>
+				<img class="slider-image" src="media/images/aircrafts/lax.jpg">
+			</li>
+		</ul>
+	</div>
+	<section class="form-search" id="search">
+		<h2 id="poisk">Поиск билетов</h2>
+		<form action="search.html" class="main-search">
+			<div class="test-0-fd">
+				<p class="search-text">Город вылета</p>
+				<select id="selectItem" class="city-button">
+					<option id="moscow">Москва</option>
+					<option id="piter">Санкт-Петербург</option>
+					<option id="dom">Анапа</option>
+				</select>
+			</div>
+				<div class="test-0-fa">
+					<p class="search-text">Город прилета</p>
+					<select id="selectItem" class="city-button">
+						<option id="vladivostok">Астрахань</option>
+						<option id="kemerovo">Домодедово</option>
+						<option id="almat">Алматы</option>
+						<option id="london">Лондон</option>
+					</select>
+				</div>
+				<div class="test-0-fdt">
+					<p class="search-text">Туда</p>
+					<input type="date" class="search-button" name="name" required>
+				</div>
+				<div class="test-0-fat">
+					<p class="search-text">Обратно</p>
+					<input type="date" class="search-button" name="name" required>
+				</div>
+				<div class="test-0-fnp">
+					<p class="search-text">Кол-во пассажиров</p>
+					<input type="number" min="1" max="8" class="passengers-button" required>
+				</div>
+				<div class="test-0-fbs">
+					<button class="search">Найти</button>
+				</div>
+			</div>
+		</form>
+	</section>
+	<h2 id="acii">Акции</h2>
+	<div class="promotions">
+		<div class="promotion">
+			<img src="media/images/promotions/promotion1.jpg" class="test-0-ai">
+			<h3 class="test-0-an">Возврат и изменение ваших билетов</h3>
+			<div class="test-0-ad">Пандемия изменила планы многих путешественников, но мы знаем, что она не будет длиться вечно. Как только все это закончится, мы продолжим исследовать этот мир так, как раньше. Специальные правила, разработанные для этой непростой ситуации, помогут вам отменить поездку или отложить ее на потом.</div>
+			<button class="test-0-abm">Подробнее</button>
+		</div>
+		<div class="promotion">
+			<img src="media/images/promotions/promotion2.jpg" class="test-0-ai">
+			<h3 class="test-0-an">Лучшие предложения</h3>
+			<div class="test-0-ad">Чтобы снова увидеть улицы, которые были свидетелями так много. Обнять своих любимых и оглянуться назад, чтобы увидеть, через что вы прошли. И думать о новых мечтах, которые будут такими особенными!</div>
+			<button class="test-0-abm">Подробнее</button>
+		</div>
+		<div class="promotion">
+			<img src="media/images/promotions/promotion3.jpg" class="test-0-ai">
+			<h3 class="test-0-an">Еще увидимся</h3>
+			<div class="test-0-ad">С начала января мы расширяем географию полетов по России,  выбирайте нашу компанию, чтобы лететь туда, где вас всегда ждут.</div>
+			<button class="test-0-abm">Подробнее</button>
+		</div>
+		<div class="promotion">
+			<img src="media/images/promotions/promotion4.jpg" class="test-0-ai">
+			<h3 class="test-0-an">Все включено</h3>
+			<div class="test-0-ad">С 10 августа мы возобновим полеты в Турцию. Рейсы из Москвы в Анталию будут выполняться два раза в день ежедневно, а рейсы по маршруту Москва-Даламан будут выполняться от трех до семи раз в неделю.</div>
+			<button class="test-0-abm">Подробнее</button>
+		</div>
+		<form class="premium">
+			<h2>Подписка на акции</h2>
+			<div class="prem-text">
+				Скидки на авиабилеты и предложения придут на вашу почту
+			</div>
+			<div class="prem-bottom">
+				<div class="mail-field">
+					<input type="email" required placeholder="Email*" class="test-0-sie">
+				</div>
+				<input class="test-0-sbs" type="submit" value="Оформить"></input>
+			</div>
+		</form>
+	</div>
+	<br>
+	<hr class="separate">
+	<h2 id="11">Отзывы</h2>
+	<div class="reviews">
+		<div class="feedback">
+			<img src="media/images/user.png" class="user-image">
+			<div class="reviewer-name">
+				Виталий Абобусов
+			</div>
+			<div class="rating">
+				<img src="media/images/star.png" class="star">
+				<img src="media/images/star.png" class="star">
+				<img src="media/images/star.png" class="star">
+				<img src="media/images/star.png" class="star">
+			</div>
+			<div class="feedback-text">
+				Удобный сайт для поиска авиабилетов, доступно множество фильтров и дополнительных функций. Есть мобильное приложение.
+			</div>
+		</div>
+		<div class="feedback">
+			<img src="media/images/user.png" class="user-image">
+			<div class="reviewer-name">
+				Олег Капибаров
+			</div>
+			<div class="rating">
+				<img src="media/images/star.png" class="star">
+				<img src="media/images/star.png" class="star">
+				<img src="media/images/star.png" class="star">
+				<img src="media/images/star.png" class="star">
+			</div>
+			<div class="feedback-text">
+				Отличный помощник в поиске выгодного перелета, сайт удобный, доступный, множество фильтров и дополнительных функций. Есть мобильное приложение.
+			</div>
+		</div>
+		<div class="feedback">
+			<img src="media/images/user.png" class="user-image">
+			<div class="reviewer-name">
+				Арсений Крутов
+			</div>
+			<div class="rating">
+				<img src="media/images/star.png" class="star">
+				<img src="media/images/star.png" class="star">
+				<img src="media/images/star.png" class="star">
+				<img src="media/images/star.png" class="star">
+				<img src="media/images/star.png" class="star">
+			</div> 
+			<div class="feedback-text">
+				Хороший сайт
+			</div>
+		</div>
+		<div class="feedback">
+			<img src="media/images/user.png" class="user-image">
+			<div class="reviewer-name">
+				Артем Кальфорниец
+			</div>
+			<div class="rating">
+				<img src="media/images/star.png" class="star">
+				<img src="media/images/star.png" class="star">
+				<img src="media/images/star.png" class="star">
+				<img src="media/images/star.png" class="star">
+			</div>
+			<div class="feedback-text">
+				Удобный сайт, поиск билетов по всем авиакомпаниями.
+			</div>
+		</div>
+		<div class="feedback">
+			<img src="media/images/user.png" class="user-image">
+			<div class="reviewer-name">
+				Данек Опасность
+			</div>
+			<div class="rating">
+				<img src="media/images/star.png" class="star">
+				<img src="media/images/star.png" class="star">
+				<img src="media/images/star.png" class="star">
+				<img src="media/images/star.png" class="star">
+				<img src="media/images/star.png" class="star">
+			</div>
+			<div class="feedback-text">
+				Удобно, выгодно
+			</div>
+		</div>
+		<div class="feedback">
+			<img src="media/images/user.png" class="user-image">
+			<div class="reviewer-name">
+				Святослав Яблоко
+			</div>
+			<div class="rating">
+				<img src="media/images/star.png" class="star">
+				<img src="media/images/star.png" class="star">
+				<img src="media/images/star.png" class="star">
+				<img src="media/images/star.png" class="star">
+			</div>
+			<div class="feedback-text">
+				* Удобно * Просто * Доступно
+			</div>
+		</div>
+	</div>
+</div>
+<footer class="footer">
+	<div class="footer-container">
+		<div class="footer-block">
+			<a href="index.html">
+				<img src="media/logo.png" alt="logo" class="test-0-logo">
+			</a>
+			<nav class="footer-nav">
+				<a href="#" class="footer-link">FAQ</a>
+				<a href="#" class="footer-link">Пользователи</a>
+				<a href="#11" class="footer-link">Отзывы</a>
+				<a href="#" class="footer-link">Контакты</a>
+				<a href="#" class="footer-link">Создал сайт:Маров Олег</a>
+			</nav>
+			<div class="test-0-phone ">
+				8 (800) 100-10-10
+			</div>
+		</div>
+	</div>
+</footer>
+<script>
+	jQuery(document).ready(function(){
+		jQuery('.bxslider').bxSlider({
+			autoStart: true,
+			auto: true,
+			pause: 4000,
+			autoDirection: 'next',
+			autoHover: true
+		});
+	});
+</script>
+</body>
+</html>

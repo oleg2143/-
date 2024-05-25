@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Вход</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header class="enter">
+	<div class="container">
+		<div>
+			<a href="index.html"><img class="test-0-logo" src="media/logo.png"></a>
+		</div>
+		<div class="menu">
+			<a href="index.html #acii"><button class="button test-0-nav-1">Предложения</button></a>
+			<a href="index.html #poisk"><button class="button test-0-nav-2">Поиск</button></a>
+			<a href="login.html"><button class="button test-0-nav-4">Личный кабинет</button></a>
+		</div>
+	</div>
+</header>
+<div class="enter-container">
+	<h1>РЕГИСТРАЦИЯ</h1>
+	<form action="login.html" name="square" id="form">
+	<label>
+		<div class="enter-elem phone">Имя
+			<br><input name="firstname" class="field test-2-name" type="text" id="firstname" required/></div>
+		<div class="enter-elem password">Фамилия
+			<br><input name="lastname" class="field test-2-last" type="text" id="lastname" required/></div><br>
+		<div class="enter-elem phone">Номер документа
+			<br><input name="doc" class="field dtest-2-doc" type="text" id="doc" required/></div>
+		<div class="enter-elem password">Телефон
+			<br><input name="phone" class="field test-2-phone" type="tel" id="phone" required/></div><br>
+		<div class="enter-elem phone">Пароль
+			<br><input name="psw" class="field test-2-pass" type="password" pattern="(?=.*\d)(?=.*[\W_]).{7,}" title="Минимум 7 символов. Вы должны использовать  хотя бы один специальный символ и хотя бы одну цифру." id="password" required/></div>
+			<div id="notice" class="pass"></div>
+		<div class="enter-elem password">Повтор пароля
+			<br><input name="psw" class="field test-2-pass2" type="password" pattern="(?=.*\d)(?=.*[\W_]).{7,}" title="Минимум 7 символов. Вы должны использовать  хотя бы один специальный символ и хотя бы одну цифру." id="password" required/></div>
+	</label>
+		<div class="test-1-fbs">
+			<button type="submit" class ="test-2-btn">Зарегистрироваться</button>
+		</div>
+	</form>
+</div>
+<footer class="enter-footer">
+	<div class="footer-container">
+		<div class="footer-block">
+			<a href="index.html">
+				<img src="media/logo.png" alt="logo" class="test-0-logo">
+			</a>
+			<nav class="footer-nav">
+				<a href="#" class="footer-link">FAQ</a>
+				<a href="#" class="footer-link">Пользователи</a>
+				<a href="#" class="footer-link">Отзывы</a>
+				<a href="#" class="footer-link">Контакты</a>
+				<a href="#" class="footer-link">Создал сайт:Маров Олег</a>
+			</nav>
+			<div class="test-0-phone ">
+				8 (800) 100-10-10
+			</div>
+		</div>
+	</div>
+</footer>
+<script type="text/javascript">
+</script>
+</body>
+</html>
